@@ -68,5 +68,6 @@
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\Tables\Game.sql" />
     <Build Include="dbo\Tables\UserGame.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserData.sql" />
   </ItemGroup>
 </Project>

@@ -4,3 +4,7 @@ C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolu
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\ChessData.sqlproj.AssemblyReference.cache
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\ChessData.dll
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\ChessData.pdb
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\Model.xml
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\refactor.xml
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\postdeploy.sql
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessData\obj\Debug\predeploy.sql

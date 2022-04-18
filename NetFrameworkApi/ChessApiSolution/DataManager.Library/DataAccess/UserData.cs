@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataManager.Library.Internal.DataAccess;
+using DataManager.Library.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +15,14 @@ namespace DataManager.Library.DataAccess
             // update info
             // delete account
             // create? Going to need it, don't know how this is going to work just yet
+            // this somehow needs to get called when the user creates the account with MS Identity 
+
+        public UserModel GetLoggedInUser(string id)
+        {
+            SqlDataAccess sql = new SqlDataAccess();
+            var p = new { Id = id };
+            var output = sql.LoadData<UserModel, dynamic>("dbo.spGetUser", p, "ChessConn");
+            return output.First();
+        }
     }
 }
