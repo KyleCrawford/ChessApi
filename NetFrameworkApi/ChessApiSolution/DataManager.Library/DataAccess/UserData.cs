@@ -21,7 +21,7 @@ namespace DataManager.Library.DataAccess
         {
             SqlDataAccess sql = new SqlDataAccess();
             var p = new { Id = id };
-            var output = sql.LoadData<UserModel, dynamic>("dbo.spGetUser", p, "ChessConn");
+            var output = sql.LoadData<UserModel, dynamic>("dbo.spGetUserData", p, "ChessConn");
             return output.First();
         }
     }

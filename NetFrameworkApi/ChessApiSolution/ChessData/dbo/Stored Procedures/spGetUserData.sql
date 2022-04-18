@@ -7,4 +7,4 @@ BEGIN
 	SELECT Id, Username, Email, CreatedDate
 	FROM dbo.[User]
 	WHERE Id = @Id
-END
+END 
