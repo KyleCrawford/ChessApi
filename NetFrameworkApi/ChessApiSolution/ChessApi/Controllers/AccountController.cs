@@ -16,6 +16,8 @@ using Microsoft.Owin.Security.OAuth;
 using ChessApi.Models;
 using ChessApi.Providers;
 using ChessApi.Results;
+using DataManager.Library.DataAccess;
+using DataManager.Library.Models;
 
 namespace ChessApi.Controllers
 {
@@ -333,6 +335,21 @@ namespace ChessApi.Controllers
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
             //error // start here tomorrow, we can put this info into our user table here
+            
+            UserModel newUser = new UserModel
+            {
+                Id = user.Id,
+                Email = model.Email,
+                Username = model.Username,
+                CreatedDate = DateTime.Now
+            };
+            UserData data = new UserData();
+            data.CreateUser(newUser);
+
+
+            // so what is it that we actually need.
+            // We need to find out how to get the ID of the user we just created.
+
 
             if (!result.Succeeded)
             {

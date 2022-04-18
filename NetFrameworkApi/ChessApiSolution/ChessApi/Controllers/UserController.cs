@@ -21,5 +21,12 @@ namespace ChessApi.Controllers
 
             return data.GetUserById(userId);
         }
+
+        //public void AddUser(UserModel newUser)
+        //{
+        //    UserData data = new UserData();
+        //    data.CreateUser(newUser);
+
+        //}
     }
 }

@@ -24,5 +24,12 @@ namespace DataManager.Library.DataAccess
             var output = sql.LoadData<UserModel, dynamic>("dbo.spGetUserData", p, "ChessConn");
             return output.First();
         }
+
+        public UserModel CreateUser(UserModel newUser)
+        {
+            SqlDataAccess sql = new SqlDataAccess();
+            sql.SaveData("dbo.spUser_Insert", newUser, "ChessConn");
+            return newUser;
+        }
     }
 }
