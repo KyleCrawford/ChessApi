@@ -332,6 +332,8 @@ namespace ChessApi.Controllers
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
+            //error // start here tomorrow, we can put this info into our user table here
+
             if (!result.Succeeded)
             {
                 return GetErrorResult(result);

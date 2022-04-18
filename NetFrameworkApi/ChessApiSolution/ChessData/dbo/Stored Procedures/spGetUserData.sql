@@ -5,6 +5,6 @@ BEGIN
 	SET NOCOUNT ON;
 
 	SELECT Id, Username, Email, CreatedDate
-	FROM dbo.[User]
+	FROM [dbo].[User]
 	WHERE Id = @Id
 END 

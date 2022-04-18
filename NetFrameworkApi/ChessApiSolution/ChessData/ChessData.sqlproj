@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\ChessData.publish.xml" />
-    <None Include="PublishLocations\ChessData.publishTwo.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />

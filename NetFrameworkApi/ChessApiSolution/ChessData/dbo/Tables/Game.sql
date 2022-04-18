@@ -4,5 +4,5 @@
 	[Code] NVARCHAR(50) NOT NULL,
 	[Name] NVARCHAR(100) NOT NULL,
 	[BoardData] NVARCHAR(MAX) NOT NULL,
-	[CreatedDate] DATETIME2 NOT NULL
+	[CreatedDate] DATETIME2 NOT NULL DEFAULT getutcdate()
 )
