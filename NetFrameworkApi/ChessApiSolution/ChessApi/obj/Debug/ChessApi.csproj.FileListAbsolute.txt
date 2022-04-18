@@ -114,3 +114,7 @@ C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolu
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\obj\Debug\ChessApi.csproj.CopyComplete
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\obj\Debug\ChessApi.dll
 C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\obj\Debug\ChessApi.pdb
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\bin\DataManager.Library.dll
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\bin\Dapper.dll
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\bin\DataManager.Library.pdb
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\ChessApi\bin\Dapper.xml

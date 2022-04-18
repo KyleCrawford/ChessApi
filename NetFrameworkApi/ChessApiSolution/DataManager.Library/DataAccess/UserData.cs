@@ -17,7 +17,7 @@ namespace DataManager.Library.DataAccess
             // create? Going to need it, don't know how this is going to work just yet
             // this somehow needs to get called when the user creates the account with MS Identity 
 
-        public UserModel GetLoggedInUser(string id)
+        public UserModel GetUserById(string id)
         {
             SqlDataAccess sql = new SqlDataAccess();
             var p = new { Id = id };
