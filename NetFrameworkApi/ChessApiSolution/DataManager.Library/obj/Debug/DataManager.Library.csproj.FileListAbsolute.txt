@@ -1,0 +1,9 @@
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\bin\Debug\DataManager.Library.dll
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\bin\Debug\DataManager.Library.pdb
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\bin\Debug\Dapper.dll
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\bin\Debug\Dapper.xml
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\obj\Debug\DataManager.Library.csproj.AssemblyReference.cache
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\obj\Debug\DataManager.Library.csproj.CoreCompileInputs.cache
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\obj\Debug\DataManager.Library.csproj.CopyComplete
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\obj\Debug\DataManager.Library.dll
+C:\Users\Kyle Crawford\Documents\GitHub\CS\ChessApi\NetFrameworkApi\ChessApiSolution\DataManager.Library\obj\Debug\DataManager.Library.pdb

@@ -61,4 +61,12 @@
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="PublishLocations" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishLocations\ChessData.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\Game.sql" />
+    <Build Include="dbo\Tables\UserGame.sql" />
+  </ItemGroup>
 </Project>
