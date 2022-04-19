@@ -1,4 +1,7 @@
 ﻿using ChessApi.Models;
+using DataManager.Library.DataAccess;
+using DataManager.Library.Models;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +12,7 @@ using System.Web.Http;
 namespace ChessApi.Controllers
 {
 	//[RoutePrefix("api/Game")]
-	//[Authorize]
+	[Authorize]
 	public class GameController : ApiController
     {
 
@@ -24,10 +27,23 @@ namespace ChessApi.Controllers
 		// POST: api/Game
 		[HttpPost]
 		[Route("api/Game")]
-		public string CreateGame([FromBody] Dictionary<string,string> value)
+		public string CreateGame(GameModel game)
         {
-			var test = value;
-			return "Hey we're here " + value;
+			string userId = RequestContext.Principal.Identity.GetUserId();
+			UserData data = new UserData();
+			game.Code = "ABC123"; // will change this later
+			game.BoardData = "initial text"; 
+
+			CreateGameModel model = new CreateGameModel
+			{
+				UserId = userId,
+				Name = game.Name,
+				Code = game.Code,
+				BoardData = game.BoardData
+			};
+
+			data.CreateGame(model);
+			return "Game Created";
 		}
 
 		// PUT: api/Game/5

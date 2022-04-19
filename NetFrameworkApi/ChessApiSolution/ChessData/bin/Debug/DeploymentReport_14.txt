@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[UserGame] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_UserGame_ToUserTwo] (Foreign Key)
+     Create
+       [dbo].[FK_UserGame_ToUserTwo] (Foreign Key)
+     Refresh
+       [dbo].[spCreateGame] (Procedure)

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\UserData.cs" />
     <Compile Include="Internal\DataAccess\SqlDataAccess.cs" />
+    <Compile Include="Models\CreateGameModel.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\UserGameModel.cs" />
     <Compile Include="Models\UserModel.cs" />

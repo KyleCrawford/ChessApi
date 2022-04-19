@@ -31,5 +31,12 @@ namespace DataManager.Library.DataAccess
             sql.SaveData("dbo.spUser_Insert", newUser, "ChessConn");
             return newUser;
         }
+
+        public CreateGameModel CreateGame(CreateGameModel model)
+        {
+            SqlDataAccess sql = new SqlDataAccess();
+            sql.SaveData("dbo.spCreateGame", model, "ChessConn");
+            return model;
+        }
     }
 }
