@@ -22,6 +22,9 @@ namespace ChessApi.Controllers
             return data.GetUserById(userId);
         }
 
+
+
+        // This is handled in the EF DB. 
         //public void AddUser(UserModel newUser)
         //{
         //    UserData data = new UserData();
