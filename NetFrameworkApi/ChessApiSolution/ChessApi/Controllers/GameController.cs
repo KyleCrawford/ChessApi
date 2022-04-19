@@ -44,6 +44,45 @@ namespace ChessApi.Controllers
 		// can be deleted by maker, and if there is only 1 player, they can delete it if owner or not
 		[delete]
 		/api/game/delete/id
+
+
+
+		// trying to combine routes
+
+		create game
+			[post]
+			/api/game
+		
+		delete game
+			[delete]
+			/api/game/id
+		
+		Get Game Info
+			[get]
+			/api/game/id
+		
+		update board (update game table)
+			[put]
+			/api/game/id
+			
+		
+		// leave game (remove player)
+			[put]
+			/api/game/leave/gameid
+		
+
+		/api/game/invite/gameid
+
+		post?
+		// invite player (send invitation to another user)
+			do we do a post?
+			/api/game/invite/gameid? - posts { "id": "userid" }
+			// Makes the most sense to do a post
+
+		put?
+		// join game ( add player)
+			/api/game/invite/gameid - puts { "id": "userid" }
+
          * */
 		// GET: api/Game
 		public IEnumerable<string> Get()
