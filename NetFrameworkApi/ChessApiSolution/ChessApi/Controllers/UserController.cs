@@ -23,6 +23,8 @@ namespace ChessApi.Controllers
         }
 
 
+        // Probably going to want a user edit. 
+        // There isn't anything by default
 
         // This is handled in the EF DB. 
         //public void AddUser(UserModel newUser)
