@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,7 +8,9 @@ using System.Web.Http;
 
 namespace ChessApi.Controllers
 {
-    public class GameController : ApiController
+	//[RoutePrefix("api/Game")]
+	//[Authorize]
+	public class GameController : ApiController
     {
 		/*
          * // User has ability to create game, join game, invite player to game
@@ -84,31 +87,77 @@ namespace ChessApi.Controllers
 			/api/game/invite/gameid - puts { "id": "userid" }
 
          * */
-		// GET: api/Game
-		public IEnumerable<string> Get()
+
+
+
+		/*
+		[Authorize(Roles = "Admin")]
+        [HttpGet]
+        [Route("api/User/Admin/GetAllUsers")]
+		// We do not need api/User because we set it at the top
+		 * */
+
+
+		// GET: api/Game/5
+		[HttpGet]
+		[Route("api/Game/{id}")]
+		public string ChangedName(int id)
         {
-            return new string[] { "value1", "value2" };
+            return id + "value";
         }
 
-        // GET: api/Game/5
-        public string Get(int id)
+		// POST: api/Game
+		[HttpPost]
+		[Route("api/Game")]
+		public string CreateGame(TestModel value)
         {
-            return "value";
+			var test = value;
+			return "Hey we're here";
+		}
+
+		// PUT: api/Game/5
+		[HttpPut]
+		[Route("api/Game")]
+		public void UpdateBoard(int id, [FromBody]string value)
+        {
+
         }
 
-        // POST: api/Game
-        public void Post([FromBody]string value)
+		// DELETE: api/Game/5
+		[HttpDelete]
+		[Route("api/Game")]
+		public void Delete(int id)
         {
+
         }
 
-        // PUT: api/Game/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
 
-        // DELETE: api/Game/5
-        public void Delete(int id)
-        {
-        }
-    }
+		/*
+		 * 
+		 * // leave game (remove player)
+			[put]
+			/api/game/leave/gameid
+		
+
+		/api/game/invite/gameid
+
+		post?
+		// invite player (send invitation to another user)
+			do we do a post?
+			/api/game/invite/gameid? - posts { "id": "userid" }
+			// Makes the most sense to do a post
+
+		put?
+		// join game ( add player)
+			/api/game/invite/gameid - puts { "id": "userid" }
+		 * */
+
+		// PUT: api/Game/5
+		[HttpPut]
+		[Route("api/Game/Leave")]
+		public void LeaveGame(int id, [FromBody] string value)
+		{
+
+		}
+	}
 }
