@@ -334,8 +334,11 @@ namespace ChessApi.Controllers
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
-            //error // start here tomorrow, we can put this info into our user table here
-            
+            if (!result.Succeeded)
+            {
+                return GetErrorResult(result);
+            }
+
             UserModel newUser = new UserModel
             {
                 Id = user.Id,
@@ -345,16 +348,6 @@ namespace ChessApi.Controllers
             };
             UserData data = new UserData();
             data.CreateUser(newUser);
-
-
-            // so what is it that we actually need.
-            // We need to find out how to get the ID of the user we just created.
-
-
-            if (!result.Succeeded)
-            {
-                return GetErrorResult(result);
-            }
 
             return Ok();
         }
